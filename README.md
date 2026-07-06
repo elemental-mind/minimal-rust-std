@@ -1,9 +1,11 @@
 # minimal-rust-std
 
-Problem: A normal hello-world build in rust comes in at around 300kB+ (on
-Windows at least), being pretty heavy for this simple task or tiny command line
-utilities. A lot of that weight comes from stack unwinding logic and panic
-handling.
+**Reduce your hello-world build size by 10x**
+
+> Problem: A normal hello-world build in rust comes in at around 300kB+ (on
+> Windows at least), being pretty heavy for this simple task or tiny command
+> line utilities. A lot of that weight comes from stack unwinding logic and
+> panic handling.
 
 This setup template reduces the hello-world binary size to 20kB without tapping
 into the unwieldy territory of `no_std` or `no_main` letting you write Rust as
