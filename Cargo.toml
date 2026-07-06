@@ -1,0 +1,4 @@
+[package]
+name = "minimal-rust-std-setup"
+version = "0.1.0"
+edition = "2024"
