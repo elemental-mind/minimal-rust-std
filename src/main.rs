@@ -1,3 +1,5 @@
+use std::io::Write;
+
 fn main() {
-    println!("Hello, world!");
+    let _ = std::io::stdout().write_all(b"Hello, world!");
 }
