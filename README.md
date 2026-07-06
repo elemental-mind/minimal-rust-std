@@ -73,6 +73,18 @@ the final binary size down to the mentioned 20kB.
 | `lto`            | `true`                      | Enables link-time optimization, allowing the linker to optimize across all compiled units together                                              |
 | `panic`          | `"immediate-abort"`         | Combined with the `panic-immediate-abort` unstable feature, this eliminates all panic formatting and stack unwinding code from the final binary |
 
+## Further Reads
+
+For more details into bin size optimizations refer to this excellent repo:
+
+[min-sized-rust by johnthagen](https://github.com/johnthagen/min-sized-rust)
+
+Also, if you want a really minimal build and don't mind writing unsafe rust or
+your own syscall templates, check out he current minimalist build at ~260 bytes
+here:
+
+[min-sized-rust-windows by mcountryman](https://github.com/mcountryman/min-sized-rust-windows)
+
 ## Contributions Welcome
 
 You found another tweak to minimize the build size that _does not_ introduce
